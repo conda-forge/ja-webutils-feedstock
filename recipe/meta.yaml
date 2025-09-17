@@ -1,13 +1,15 @@
 {% set name = "ja-webutils" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
+{% set python_min = "3.10" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ja_webutils-{{ version }}.tar.gz
-  sha256: 92be9fc2b162a3de9c1f2e1bbb11371146746c7964f64785d0661fa146b8686b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ja_webutils-{{ version }}.tar.gz
+  sha256: fda278abed65d1cb24517997ca7aa1be00acbc32b017893df4d2054f591cae26
 
 build:
   noarch: python
@@ -16,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >={{ python_min }}
     - setuptools >=61
     - setuptools-scm >=3.4.3
     - wheel
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
   imports:
