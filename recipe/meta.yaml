@@ -1,5 +1,5 @@
 {% set name = "ja-webutils" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ja_webutils-{{ version }}.tar.gz
-  sha256: 3f4aaba3faf0a6e419bd24cdc1ce1efa6892f79b5aa0cf14ed242ac2fbd4268e
+  sha256: 92be9fc2b162a3de9c1f2e1bbb11371146746c7964f64785d0661fa146b8686b
 
 build:
   noarch: python
