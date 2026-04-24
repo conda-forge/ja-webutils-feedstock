@@ -1,5 +1,5 @@
 {% set name = "ja-webutils" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.14" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ja_webutils-{{ version }}.tar.gz
-  sha256: fda278abed65d1cb24517997ca7aa1be00acbc32b017893df4d2054f591cae26
+  sha256: 52675b5df4e578f680dfc8469a432ca5bd5cd540ec94882047fe1dca878be2c6
 
 build:
   noarch: python
@@ -42,9 +42,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
-  description: A pure Python class library to facilitate programatic generation of web pages. Three main classes
-    Page - represents the full HTML. PageItem - an abstract base class for most non-form tags. 
-    PageFormItem - an abstract base class for tags that return information.
+  description: A pure Python class library to facilitate programatic generation of web pages. Three main classes Page - represents the full HTML. PageItem - an abstract base class for most non-form tags. PageFormItem - an abstract base class for tags that return information.
 
 extra:
   recipe-maintainers:
